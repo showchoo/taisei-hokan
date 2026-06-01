@@ -119,9 +119,10 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 
 /* シルエット画像: 黒→キャラ色に変換 */
 .cfig img{width:80px;height:120px;object-fit:contain;transition:all 0.5s ease;pointer-events:none}
-.cfig[data-char="oguri"] img{filter:brightness(0.2) sepia(1) saturate(5) hue-rotate(-20deg) brightness(0.8)}
-.cfig[data-char="katsu"] img{filter:brightness(0.2) sepia(1) saturate(3) hue-rotate(180deg) brightness(0.7)}
-.cfig[data-char="matsudaira"] img{filter:brightness(0.2) sepia(1) saturate(3) hue-rotate(100deg) brightness(0.7)}
+.cfig[data-char="oguri"] img{filter:invert(15%) sepia(1) saturate(5) hue-rotate(-20deg) brightness(0.9)}
+.cfig[data-char="katsu"] img{filter:invert(30%) sepia(1) saturate(3) hue-rotate(180deg) brightness(0.8)}
+.cfig[data-char="matsudaira"] img{filter:invert(25%) sepia(1) saturate(3) hue-rotate(100deg) brightness(0.8)}
+
 
 .cfig-name{font-size:0.6rem;letter-spacing:0.1em;color:var(--text-dim);text-align:center;margin-top:10px;opacity:0.3;transition:all 0.5s}
 .cfig[data-char="oguri"]{--cc:var(--crimson)}.cfig[data-char="katsu"]{--cc:var(--blue)}.cfig[data-char="matsudaira"]{--cc:var(--green)}
